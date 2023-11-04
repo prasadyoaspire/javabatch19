@@ -15,8 +15,10 @@ public class Main {
 		ApplicationContext context = 
 				new ClassPathXmlApplicationContext("appcontext.xml");
 
-		ProductController pController = 
-				(ProductController) context.getBean("pController");
+		/*ProductController pController = 
+				(ProductController) context.getBean("pController");*/
+		
+		ProductController pController = context.getBean(ProductController.class);
 		
 		Product p1 = new Product();
 		p1.setProductId(10);

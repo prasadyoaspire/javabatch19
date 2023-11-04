@@ -3,8 +3,11 @@ package com.cg.springcore2.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.cg.springcore2.bean.Product;
 
+@Repository
 public class ProductDaoImpl implements ProductDao {
 	
 	private List<Product> list = new ArrayList<>();

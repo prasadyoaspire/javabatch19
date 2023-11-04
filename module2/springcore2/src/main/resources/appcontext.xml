@@ -7,7 +7,12 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
 		
-	<bean id="pDao" class="com.cg.springcore2.dao.ProductDaoImpl"/>	
+	<!-- <context:annotation-config/> -->
+	
+	<context:component-scan base-package="com.cg.springcore2"/>
+	
+		
+<!-- 	<bean id="pDao" class="com.cg.springcore2.dao.ProductDaoImpl"/>	
 	
 	<bean id="pService" class="com.cg.springcore2.service.ProductServiceImpl">	
 		<property name="productDao" ref="pDao"/>
@@ -15,6 +20,6 @@
 	
 	<bean id="pController" class="com.cg.springcore2.controller.ProductController">
 		<property name="productSerivce" ref="pService"/>
-	</bean>	
+	</bean>	 -->
 		
 </beans>		
