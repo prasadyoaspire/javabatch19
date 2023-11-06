@@ -14,8 +14,7 @@ public class AllCustomers {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("springcontext.xml");
 		
-		CustomerController cController = 
-				(CustomerController) context.getBean("cController");
+		CustomerController cController = context.getBean(CustomerController.class);
 		
 		List<Customer> customers = cController.findAllCustomers();
 		

@@ -2,12 +2,17 @@ package com.cg.ecomapp.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
 import com.cg.ecomapp.dto.Customer;
 import com.cg.ecomapp.service.CustomerService;
 import com.cg.ecomapp.service.CustomerServiceImpl;
 
+@Controller
 public class CustomerController {
 	
+	@Autowired
 	private CustomerService customerService;
 	
 	public void setCustomerService(CustomerService customerService) {

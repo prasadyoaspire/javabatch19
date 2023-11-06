@@ -1,11 +1,25 @@
 package com.cg.ecomapp.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="customer_tbl")
 public class Customer {
 
+	@Id
+	@Column(name="customer_id")
 	private int customerId;
+	
+	@Column(name="customer_name")
 	private String customerName;
+	
 	private int age;
+	
 	private String email;
+	
 	private String mobile;
 	
 	public int getCustomerId() {

@@ -12,8 +12,7 @@ public class AddCustomerMain {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("springcontext.xml");
 		
-		CustomerController cController = 
-				(CustomerController) context.getBean("cController");
+		CustomerController cController = context.getBean(CustomerController.class);
 		
 		Customer customer = new Customer();
 		customer.setCustomerId(99999);
