@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2>Registration From</h2>
+    <form>
+        <div>
+            <label>FirstName</label>
+            <input type="text" name="fname" id="fname" pattern="[a-zA-Z]{5,15}"/>
+        </div>
+        <div>
+            <label>LastName</label>
+            <input type="text" name="lname" id="lname" />
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email"/>
+        </div>
+        <div>
+            <label>DOB</label>
+            <input type="date" name="dob" id="dob"/>
+        </div>
+        <div>
+            <label>Country</label>
+            <select name="country" id="country">
+                <option value="#">--Select--</option>
+                <option value="India">IND</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+        <div>
+            <label>Skills</label>
+            <input type="checkbox" name="skill" value="java">Java
+            <input type="checkbox" name="skill" value="sql">SQL<br>
+            <input type="checkbox" name="skill" value="javascript">JavaScript
+            <input type="checkbox" name="skill" value="hibernate">Hibernate<br>
+            <input type="checkbox" name="skill" value="Devops">Devops
+            <input type="checkbox" name="skill" value="spring">Spring<br>
+        </div>
+        <div>
+            <label>About You</label>
+
+        </div>
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>
